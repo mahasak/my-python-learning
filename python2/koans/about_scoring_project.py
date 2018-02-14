@@ -41,7 +41,6 @@ def score(dice):
     for num in dice: s[num] += 1
     for num,count in s.items():
         triple, remain = divmod(count, 3)
-        print "%s = %d %d" % (num,triple,remain)
         if num == 1:
             final_score += ((1000*triple) + (remain * 100))
         elif num == 5:
